@@ -1,0 +1,15 @@
+${head}
+<ul>
+    ${
+        orderTypes.map(t => `
+        <li>
+            <a href="/orders/${t}">
+            ${t} ${pricePerType[t]}  
+            </a>
+
+        </li>
+        
+        `).join('')
+    }
+</ul>    
+${footer}
